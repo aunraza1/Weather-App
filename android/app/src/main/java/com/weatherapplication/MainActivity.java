@@ -50,17 +50,17 @@ public void onCreate(Bundle saved) {
            splash.setSplashHideAnimation(SPLASH_SLIDE_RIGHT);
            //Set Delay for Splash to hide
            splash.setSplashHideDelay(1500);
-    AnimatedObject logoimage = new AnimatedObject(R.drawable.logo, screenHeight * 0.24, screenWidth * 0.4);
-    splash.addAnimatedImage(logoimage);
+    // AnimatedObject logoimage = new AnimatedObject(R.drawable.logo, screenHeight * 0.24, screenWidth * 0.4);
+    // splash.addAnimatedImage(logoimage);
 
 
-    ObjectAnimation logoimageAnimation1 = new ObjectAnimation(logoimage, FADE, 1000, 0f, 1f, false);
-    ObjectAnimation logoimageAnimation2 = new ObjectAnimation(logoimage, SCALE, 1000, 0f, 1f, 0f, 1f, false);
+    // ObjectAnimation logoimageAnimation1 = new ObjectAnimation(logoimage, FADE, 1000, 0f, 1f, false);
+    // ObjectAnimation logoimageAnimation2 = new ObjectAnimation(logoimage, SCALE, 1000, 0f, 1f, 0f, 1f, false);
 
 
-    GroupAnimation group1 = new GroupAnimation(1);
-    group1.addAnimation(logoimageAnimation1);
-    group1.addAnimation(logoimageAnimation2);
+    // GroupAnimation group1 = new GroupAnimation(1);
+    // group1.addAnimation(logoimageAnimation1);
+    // group1.addAnimation(logoimageAnimation2);
            //Creating Image and adding its properties and animation
 
  
