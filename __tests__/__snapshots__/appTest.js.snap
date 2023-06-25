@@ -1,0 +1,586 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#0B0B45",
+        "flex": 1,
+        "paddingHorizontal": 37.5,
+        "paddingVertical": 26.68,
+      },
+      undefined,
+    ]
+  }
+>
+  <RCTScrollView
+    style={
+      {
+        "flex": 1,
+        "marginTop": 40.019999999999996,
+        "paddingHorizontal": 37.5,
+      }
+    }
+  >
+    <View>
+      <Text
+        allowFontScaling={false}
+        style={
+          [
+            {
+              "alignSelf": "flex-start",
+              "color": "#FFFFFF",
+              "fontFamily": "Montserrat-Bold",
+              "fontSize": 20.009999999999998,
+            },
+            {
+              "alignSelf": "center",
+              "fontSize": 33.35,
+            },
+          ]
+        }
+      >
+        Select Location
+      </Text>
+      <Text
+        allowFontScaling={false}
+        numberOfLines={2}
+        style={
+          [
+            {
+              "color": "#FFFFFF",
+              "fontFamily": "Montserrat-Regular",
+              "fontSize": 20.009999999999998,
+            },
+            {
+              "marginTop": 13.34,
+            },
+          ]
+        }
+      >
+        Select the city you are looking for knowing the weather
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "backgroundColor": "#28356b",
+            "borderRadius": 45,
+            "flexDirection": "row",
+            "height": 80.03999999999999,
+            "marginTop": 26.68,
+            "opacity": 1,
+            "padding": 6.67,
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "height": "100%",
+              "justifyContent": "center",
+              "paddingLeft": 30,
+              "width": "80%",
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            numberOfLines={1}
+            style={
+              [
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Montserrat-Regular",
+                  "fontSize": 20.009999999999998,
+                },
+                undefined,
+              ]
+            }
+          >
+            Select Location
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "height": "100%",
+              "width": "20%",
+            }
+          }
+        >
+          <Image
+            source={
+              {
+                "testUri": "../../../src/assets/icons/dropdown.png",
+              }
+            }
+            style={
+              {
+                "height": "100%",
+                "resizeMode": "contain",
+                "tintColor": "#FFFFFF",
+                "width": "60%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <Modal
+    hardwareAccelerated={false}
+    statusBarTranslucent={true}
+    transparent={true}
+    visible={false}
+  />
+</View>
+`;
+
+exports[`renders correctly 2`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#0B0B45",
+        "flex": 1,
+        "paddingHorizontal": 37.5,
+        "paddingVertical": 26.68,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginTop": 26.68,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+          "width": "20%",
+        }
+      }
+    >
+      <Image
+        source={
+          {
+            "testUri": "../../../src/assets/icons/backArrow.png",
+          }
+        }
+        style={
+          {
+            "height": 40.019999999999996,
+            "resizeMode": "contain",
+            "tintColor": "#FFFFFF",
+            "width": "80%",
+          }
+        }
+      />
+    </View>
+    <Text
+      allowFontScaling={false}
+      style={
+        [
+          {
+            "alignSelf": "flex-start",
+            "color": "#FFFFFF",
+            "fontFamily": "Montserrat-Bold",
+            "fontSize": 20.009999999999998,
+          },
+          {
+            "fontSize": 33.35,
+            "marginLeft": 112.5,
+          },
+        ]
+      }
+    />
+  </View>
+  <RCTScrollView
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "marginTop": 40.019999999999996,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "backgroundColor": "#f59042",
+                "borderRadius": 7.5,
+                "height": 15,
+                "width": 15,
+              }
+            }
+          />
+          <Text
+            allowFontScaling={false}
+            style={
+              [
+                {
+                  "alignSelf": "flex-start",
+                  "color": "#FFFFFF",
+                  "fontFamily": "Montserrat-Light",
+                  "fontSize": 20.009999999999998,
+                },
+                {
+                  "marginLeft": 15,
+                },
+              ]
+            }
+          >
+            Today  08:30
+          </Text>
+        </View>
+        <Image
+          source={
+            {
+              "testUri": "../../../src/assets/icons/clouds.png",
+            }
+          }
+          style={
+            {
+              "height": 200.1,
+              "tintColor": "#FFFFFF",
+              "width": 225,
+            }
+          }
+        />
+        <Text
+          allowFontScaling={false}
+          style={
+            [
+              {
+                "alignSelf": "flex-start",
+                "color": "#FFFFFF",
+                "fontFamily": "Montserrat-Bold",
+                "fontSize": 20.009999999999998,
+              },
+              {
+                "alignSelf": "center",
+                "fontSize": 40.019999999999996,
+              },
+            ]
+          }
+        >
+          NaN °C
+        </Text>
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#28356b",
+              "borderRadius": 22.5,
+              "justifyContent": "center",
+              "marginTop": 26.68,
+              "maxWidth": 277.5,
+              "paddingHorizontal": 22.5,
+              "paddingVertical": 13.34,
+            }
+          }
+        >
+          <Text
+            allowFontScaling={false}
+            numberOfLines={1}
+            style={
+              [
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Montserrat-Regular",
+                  "fontSize": 20.009999999999998,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+        <View
+          style={
+            [
+              {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "marginTop": 40.019999999999996,
+              },
+              {
+                "width": "100%",
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              {
+                "marginRight": "1%",
+                "marginTop": 26.68,
+                "width": "32%",
+              }
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../src/assets/icons/humidity.png",
+                }
+              }
+              style={
+                {
+                  "height": 53.36,
+                  "resizeMode": "contain",
+                  "tintColor": "#FFFFFF",
+                  "width": "100%",
+                }
+              }
+            />
+            <Text
+              allowFontScaling={false}
+              style={
+                [
+                  {
+                    "alignSelf": "flex-start",
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 20.009999999999998,
+                  },
+                  {
+                    "alignSelf": "center",
+                    "marginTop": 13.34,
+                  },
+                ]
+              }
+            >
+              undefined%
+            </Text>
+            <Text
+              allowFontScaling={false}
+              numberOfLines={1}
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat-Regular",
+                    "fontSize": 20.009999999999998,
+                  },
+                  {
+                    "alignSelf": "center",
+                    "marginTop": 13.34,
+                  },
+                ]
+              }
+            >
+              Humidity
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "marginRight": "1%",
+                "marginTop": 26.68,
+                "width": "32%",
+              }
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../src/assets/icons/temprature.png",
+                }
+              }
+              style={
+                {
+                  "height": 53.36,
+                  "resizeMode": "contain",
+                  "tintColor": "#FFFFFF",
+                  "width": "100%",
+                }
+              }
+            />
+            <Text
+              allowFontScaling={false}
+              style={
+                [
+                  {
+                    "alignSelf": "flex-start",
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 20.009999999999998,
+                  },
+                  {
+                    "alignSelf": "center",
+                    "marginTop": 13.34,
+                  },
+                ]
+              }
+            >
+              NaN°C
+            </Text>
+            <Text
+              allowFontScaling={false}
+              numberOfLines={1}
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat-Regular",
+                    "fontSize": 20.009999999999998,
+                  },
+                  {
+                    "alignSelf": "center",
+                    "marginTop": 13.34,
+                  },
+                ]
+              }
+            >
+              Feels Like
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "marginRight": "1%",
+                "marginTop": 26.68,
+                "width": "32%",
+              }
+            }
+          >
+            <Image
+              source={
+                {
+                  "testUri": "../../../src/assets/icons/wind.png",
+                }
+              }
+              style={
+                {
+                  "height": 53.36,
+                  "resizeMode": "contain",
+                  "tintColor": "#FFFFFF",
+                  "width": "100%",
+                }
+              }
+            />
+            <Text
+              allowFontScaling={false}
+              style={
+                [
+                  {
+                    "alignSelf": "flex-start",
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat-Bold",
+                    "fontSize": 20.009999999999998,
+                  },
+                  {
+                    "alignSelf": "center",
+                    "marginTop": 13.34,
+                  },
+                ]
+              }
+            >
+              undefinedm/s
+            </Text>
+            <Text
+              allowFontScaling={false}
+              numberOfLines={1}
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Montserrat-Regular",
+                    "fontSize": 20.009999999999998,
+                  },
+                  {
+                    "alignSelf": "center",
+                    "marginTop": 13.34,
+                  },
+                ]
+              }
+            >
+              Wind Speed
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
