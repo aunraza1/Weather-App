@@ -1,0 +1,387 @@
+diff --git a/node_modules/react-native-animated-splash/android/build.gradle b/node_modules/react-native-animated-splash/android/build.gradle
+index eeaf639..fb88850 100644
+--- a/node_modules/react-native-animated-splash/android/build.gradle
++++ b/node_modules/react-native-animated-splash/android/build.gradle
+@@ -12,12 +12,12 @@ buildscript {
+ apply plugin: 'com.android.library'
+ 
+ android {
+-    compileSdkVersion 28
++    compileSdkVersion 33
+     buildToolsVersion "28.0.3"
+ 
+     defaultConfig {
+         minSdkVersion 16
+-        targetSdkVersion 28
++        targetSdkVersion 33
+         versionCode 138
+         versionName "1.3.8"
+     }
+diff --git a/node_modules/react-native-animated-splash/android/build/.transforms/f7556c3c062dc7caed95dc20c2fba69d/results.bin b/node_modules/react-native-animated-splash/android/build/.transforms/f7556c3c062dc7caed95dc20c2fba69d/results.bin
+new file mode 100644
+index 0000000..0d259dd
+--- /dev/null
++++ b/node_modules/react-native-animated-splash/android/build/.transforms/f7556c3c062dc7caed95dc20c2fba69d/results.bin
+@@ -0,0 +1 @@
++o/classes
+diff --git a/node_modules/react-native-animated-splash/android/build/.transforms/f7556c3c062dc7caed95dc20c2fba69d/transformed/classes/classes.dex b/node_modules/react-native-animated-splash/android/build/.transforms/f7556c3c062dc7caed95dc20c2fba69d/transformed/classes/classes.dex
+new file mode 100644
+index 0000000..446d8b4
+Binary files /dev/null and b/node_modules/react-native-animated-splash/android/build/.transforms/f7556c3c062dc7caed95dc20c2fba69d/transformed/classes/classes.dex differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml b/node_modules/react-native-animated-splash/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
+index cf3a92e..ae9f789 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/aapt_friendly_merged_manifests/debug/aapt/AndroidManifest.xml
+@@ -2,8 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.blitzapp.animatedsplash" >
+ 
+-    <uses-sdk
+-        android:minSdkVersion="16"
+-        android:targetSdkVersion="28" />
++    <uses-sdk android:minSdkVersion="16" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/aar_metadata/debug/aar-metadata.properties b/node_modules/react-native-animated-splash/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+index 8c9c699..776557e 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+@@ -1,4 +1,5 @@
+ aarFormatVersion=1.0
+ aarMetadataVersion=1.0
+ minCompileSdk=1
++minCompileSdkExtension=0
+ minAndroidGradlePluginVersion=1.0.0
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compile_library_classes_jar/debug/classes.jar b/node_modules/react-native-animated-splash/android/build/intermediates/compile_library_classes_jar/debug/classes.jar
+index 8ed6995..26884fb 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compile_library_classes_jar/debug/classes.jar and b/node_modules/react-native-animated-splash/android/build/intermediates/compile_library_classes_jar/debug/classes.jar differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compile_r_class_jar/debug/R.jar b/node_modules/react-native-animated-splash/android/build/intermediates/compile_r_class_jar/debug/R.jar
+index f4cc876..c062f31 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compile_r_class_jar/debug/R.jar and b/node_modules/react-native-animated-splash/android/build/intermediates/compile_r_class_jar/debug/R.jar differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compile_symbol_list/debug/R.txt b/node_modules/react-native-animated-splash/android/build/intermediates/compile_symbol_list/debug/R.txt
+index e8122c9..8054bac 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/compile_symbol_list/debug/R.txt
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/compile_symbol_list/debug/R.txt
+@@ -783,6 +783,7 @@ int id accessibility_label 0x0
+ int id accessibility_links 0x0
+ int id accessibility_role 0x0
+ int id accessibility_state 0x0
++int id accessibility_state_expanded 0x0
+ int id accessibility_value 0x0
+ int id action_bar 0x0
+ int id action_bar_activity_content 0x0
+@@ -872,12 +873,7 @@ int id packed 0x0
+ int id parent 0x0
+ int id parentPanel 0x0
+ int id percent 0x0
+-int id pointer_enter 0x0
+-int id pointer_enter_capture 0x0
+-int id pointer_leave 0x0
+-int id pointer_leave_capture 0x0
+-int id pointer_move 0x0
+-int id pointer_move_capture 0x0
++int id pointer_events 0x0
+ int id progress_circular 0x0
+ int id progress_horizontal 0x0
+ int id radio 0x0
+@@ -1738,7 +1734,7 @@ int styleable CheckedTextView_android_checkMark 0
+ int styleable CheckedTextView_checkMarkCompat 1
+ int styleable CheckedTextView_checkMarkTint 2
+ int styleable CheckedTextView_checkMarkTintMode 3
+-int[] styleable ColorStateListItem { 0x0, 0x101031f, 0x10101a5, 0x0, 0x0 }
++int[] styleable ColorStateListItem { 0x0, 0x101031f, 0x10101a5, 0x1010647, 0x0 }
+ int styleable ColorStateListItem_alpha 0
+ int styleable ColorStateListItem_android_alpha 1
+ int styleable ColorStateListItem_android_color 2
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_faday.xml.flat b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_faday.xml.flat
+index c99a4a5..54af0d6 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_faday.xml.flat and b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_faday.xml.flat differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_fadein_dialog.xml.flat b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_fadein_dialog.xml.flat
+index cce7492..5a30d72 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_fadein_dialog.xml.flat and b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_fadein_dialog.xml.flat differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_fadeout_dialog.xml.flat b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_fadeout_dialog.xml.flat
+index e5d37f1..464e58a 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_fadeout_dialog.xml.flat and b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_fadeout_dialog.xml.flat differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_flip_animation.xml.flat b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_flip_animation.xml.flat
+index 7e319a1..ae280b5 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_flip_animation.xml.flat and b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_flip_animation.xml.flat differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_down.xml.flat b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_down.xml.flat
+index 26230a3..19a311c 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_down.xml.flat and b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_down.xml.flat differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_left.xml.flat b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_left.xml.flat
+index 7f595fe..8e2fd98 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_left.xml.flat and b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_left.xml.flat differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_right.xml.flat b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_right.xml.flat
+index 5419fe1..b2a5345 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_right.xml.flat and b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_right.xml.flat differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_up.xml.flat b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_up.xml.flat
+index 07a1fed..3c04534 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_up.xml.flat and b/node_modules/react-native-animated-splash/android/build/intermediates/compiled_local_resources/debug/out/anim_slide_up.xml.flat differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+index b84f5a5..55b34eb 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties
+@@ -1,9 +1,9 @@
+-#Wed Oct 05 12:45:40 PKT 2022
+-com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/slide_left.xml=/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/packaged_res/debug/anim/slide_left.xml
+-com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/fadeout_dialog.xml=/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/packaged_res/debug/anim/fadeout_dialog.xml
+-com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/slide_up.xml=/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/packaged_res/debug/anim/slide_up.xml
+-com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/slide_right.xml=/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/packaged_res/debug/anim/slide_right.xml
+-com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/flip_animation.xml=/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/packaged_res/debug/anim/flip_animation.xml
+-com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/fadein_dialog.xml=/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/packaged_res/debug/anim/fadein_dialog.xml
+-com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/slide_down.xml=/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/packaged_res/debug/anim/slide_down.xml
+-com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/faday.xml=/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/packaged_res/debug/anim/faday.xml
++#Sat Jun 24 14:48:26 PKT 2023
++com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/slide_left.xml=D\:\\WeatherApplication\\node_modules\\react-native-animated-splash\\android\\build\\intermediates\\packaged_res\\debug\\anim\\slide_left.xml
++com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/fadeout_dialog.xml=D\:\\WeatherApplication\\node_modules\\react-native-animated-splash\\android\\build\\intermediates\\packaged_res\\debug\\anim\\fadeout_dialog.xml
++com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/slide_up.xml=D\:\\WeatherApplication\\node_modules\\react-native-animated-splash\\android\\build\\intermediates\\packaged_res\\debug\\anim\\slide_up.xml
++com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/slide_right.xml=D\:\\WeatherApplication\\node_modules\\react-native-animated-splash\\android\\build\\intermediates\\packaged_res\\debug\\anim\\slide_right.xml
++com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/flip_animation.xml=D\:\\WeatherApplication\\node_modules\\react-native-animated-splash\\android\\build\\intermediates\\packaged_res\\debug\\anim\\flip_animation.xml
++com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/fadein_dialog.xml=D\:\\WeatherApplication\\node_modules\\react-native-animated-splash\\android\\build\\intermediates\\packaged_res\\debug\\anim\\fadein_dialog.xml
++com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/slide_down.xml=D\:\\WeatherApplication\\node_modules\\react-native-animated-splash\\android\\build\\intermediates\\packaged_res\\debug\\anim\\slide_down.xml
++com.blitzapp.animatedsplash.react-native-animated-splash-main-7\:/anim/faday.xml=D\:\\WeatherApplication\\node_modules\\react-native-animated-splash\\android\\build\\intermediates\\packaged_res\\debug\\anim\\faday.xml
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+index e5f3f29..ac7f78c 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/debug/packageDebugResources/merger.xml
+@@ -1,5 +1,5 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res"/><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/generated/res/rs/debug"/><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res"><file name="slide_right" path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/anim/slide_right.xml" qualifiers="" type="anim"/><file name="slide_up" path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/anim/slide_up.xml" qualifiers="" type="anim"/><file name="slide_down" path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/anim/slide_down.xml" qualifiers="" type="anim"/><file name="slide_left" path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/anim/slide_left.xml" qualifiers="" type="anim"/><file name="faday" path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/anim/faday.xml" qualifiers="" type="anim"/><file name="flip_animation" path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/anim/flip_animation.xml" qualifiers="" type="anim"/><file name="fadein_dialog" path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/anim/fadein_dialog.xml" qualifiers="" type="anim"/><file name="fadeout_dialog" path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/anim/fadeout_dialog.xml" qualifiers="" type="anim"/><file path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/res/values/styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
++<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res"/><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\build\generated\res\rs\debug"/><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res"><file name="faday" path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\anim\faday.xml" qualifiers="" type="anim"/><file name="fadein_dialog" path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\anim\fadein_dialog.xml" qualifiers="" type="anim"/><file name="fadeout_dialog" path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\anim\fadeout_dialog.xml" qualifiers="" type="anim"/><file name="flip_animation" path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\anim\flip_animation.xml" qualifiers="" type="anim"/><file name="slide_down" path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\anim\slide_down.xml" qualifiers="" type="anim"/><file name="slide_left" path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\anim\slide_left.xml" qualifiers="" type="anim"/><file name="slide_right" path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\anim\slide_right.xml" qualifiers="" type="anim"/><file name="slide_up" path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\anim\slide_up.xml" qualifiers="" type="anim"/><file path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+         
+         <item name="android:textColor">#000000</item>
+     </style><style name="DialogTheme">
+@@ -13,4 +13,4 @@
+         <item name="android:windowExitAnimation">@anim/slide_down</item>
+     </style><style name="fade">
+         <item name="android:windowExitAnimation">@anim/fadeout_dialog</item>
+-    </style></file></source><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/generated/res/rs/debug"/><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/debug/res"/></dataSet><mergedItems/></merger>
+\ No newline at end of file
++    </style></file></source><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\build\generated\res\rs\debug"/><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems/></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+index 19c5bf3..6c10b0e 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml
+@@ -1,2 +1,2 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/debug/jniLibs"/></dataSet></merger>
+\ No newline at end of file
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\jniLibs"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\debug\jniLibs"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+index 56e19f1..502a48f 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -1,2 +1,2 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/debug/shaders"/></dataSet></merger>
+\ No newline at end of file
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\debug\shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/packageDebugAssets/merger.xml b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+index 7e37980..37cd8f1 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/incremental/packageDebugAssets/merger.xml
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+@@ -1,2 +1,2 @@
+ <?xml version="1.0" encoding="utf-8"?>
+-<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/assets"/><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/build/intermediates/shader_assets/debug/out"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/debug/assets"/></dataSet></merger>
+\ No newline at end of file
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\assets"/><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\build\intermediates\shader_assets\debug\out"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\debug\assets"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/AnimationsList.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/AnimationsList.class
+index b4dab71..ea3bdc4 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/AnimationsList.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/AnimationsList.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/BuildConfig.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/BuildConfig.class
+index 47816f0..e393178 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/BuildConfig.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/BuildConfig.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/HideAnimationList.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/HideAnimationList.class
+index 78f22a6..1d74e1f 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/HideAnimationList.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/HideAnimationList.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/ListItem.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/ListItem.class
+index 4023677..3dc3117 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/ListItem.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/ListItem.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/RNAnimatedSplashModule.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/RNAnimatedSplashModule.class
+index 7f9e739..2984246 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/RNAnimatedSplashModule.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/RNAnimatedSplashModule.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/RNAnimatedSplashPackage.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/RNAnimatedSplashPackage.class
+index db16f67..1c390bc 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/RNAnimatedSplashPackage.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/RNAnimatedSplashPackage.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/AnimatedObject.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/AnimatedObject.class
+index 9e99b76..10f2a6d 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/AnimatedObject.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/AnimatedObject.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/AnimatedText.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/AnimatedText.class
+index ea53b5d..00d27af 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/AnimatedText.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/AnimatedText.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Constants.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Constants.class
+index 70e7fce..bf5a809 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Constants.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Constants.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/GroupAnimation.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/GroupAnimation.class
+index 300600e..abf1940 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/GroupAnimation.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/GroupAnimation.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/HideGroupAnimation.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/HideGroupAnimation.class
+index a7485ab..db19002 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/HideGroupAnimation.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/HideGroupAnimation.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/HideSingleAnimation.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/HideSingleAnimation.class
+index 2a0b1eb..e8bcf4f 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/HideSingleAnimation.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/HideSingleAnimation.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/NoAnimationException.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/NoAnimationException.class
+index ccf2e84..4ef7a92 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/NoAnimationException.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/NoAnimationException.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$1.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$1.class
+index 825cf94..873409c 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$1.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$1.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$2.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$2.class
+index 2729adb..0f54cc3 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$2.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$2.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$3.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$3.class
+index 8d32d16..3d77428 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$3.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$3.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$4.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$4.class
+index 0cf7138..4ec829a 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$4.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$4.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$5.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$5.class
+index f33a295..d6186ee 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$5.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$5.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$6.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$6.class
+index ad1db07..a9abfad 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$6.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$6.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$7.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$7.class
+index 589e6e1..2dd8177 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$7.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$7.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$8.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$8.class
+index f325eec..8a6e34e 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$8.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation$8.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation.class
+index 08e501c..6953aa6 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/ObjectAnimation.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/SingleAnimation.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/SingleAnimation.class
+index 897bab5..75f2f25 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/SingleAnimation.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/SingleAnimation.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$1.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$1.class
+index 7d56d76..1a3b281 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$1.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$1.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$2.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$2.class
+index aa44bac..b39a4ea 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$2.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$2.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$3.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$3.class
+index 1de55b3..d490fed 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$3.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash$3.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash.class b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash.class
+index 81c9789..86d7772 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash.class and b/node_modules/react-native-animated-splash/android/build/intermediates/javac/debug/classes/com/blitzapp/animatedsplash/animation/Splash.class differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt b/node_modules/react-native-animated-splash/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+index c0f2f6e..2d5be44 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/manifest_merge_blame_file/debug/manifest-merger-blame-debug-report.txt
+@@ -2,10 +2,7 @@
+ 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+ 3    package="com.blitzapp.animatedsplash" >
+ 4
+-5    <uses-sdk
+-6        android:minSdkVersion="16"
+-6-->/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-7        android:targetSdkVersion="28" />
+-7-->/Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-8
+-9</manifest>
++5    <uses-sdk android:minSdkVersion="16" />
++5-->D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++6
++7</manifest>
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml b/node_modules/react-native-animated-splash/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+index cf3a92e..ae9f789 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml
+@@ -2,8 +2,6 @@
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.blitzapp.animatedsplash" >
+ 
+-    <uses-sdk
+-        android:minSdkVersion="16"
+-        android:targetSdkVersion="28" />
++    <uses-sdk android:minSdkVersion="16" />
+ 
+ </manifest>
+\ No newline at end of file
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/runtime_library_classes_jar/debug/classes.jar b/node_modules/react-native-animated-splash/android/build/intermediates/runtime_library_classes_jar/debug/classes.jar
+index 4c1a910..bc6d9fc 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/intermediates/runtime_library_classes_jar/debug/classes.jar and b/node_modules/react-native-animated-splash/android/build/intermediates/runtime_library_classes_jar/debug/classes.jar differ
+diff --git a/node_modules/react-native-animated-splash/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt b/node_modules/react-native-animated-splash/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+index ca6d031..217f773 100644
+--- a/node_modules/react-native-animated-splash/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
++++ b/node_modules/react-native-animated-splash/android/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt
+@@ -784,6 +784,7 @@ id accessibility_label
+ id accessibility_links
+ id accessibility_role
+ id accessibility_state
++id accessibility_state_expanded
+ id accessibility_value
+ id action_bar
+ id action_bar_activity_content
+@@ -873,12 +874,7 @@ id packed
+ id parent
+ id parentPanel
+ id percent
+-id pointer_enter
+-id pointer_enter_capture
+-id pointer_leave
+-id pointer_leave_capture
+-id pointer_move
+-id pointer_move_capture
++id pointer_events
+ id progress_circular
+ id progress_horizontal
+ id radio
+diff --git a/node_modules/react-native-animated-splash/android/build/outputs/logs/manifest-merger-debug-report.txt b/node_modules/react-native-animated-splash/android/build/outputs/logs/manifest-merger-debug-report.txt
+index 23535f2..b650551 100644
+--- a/node_modules/react-native-animated-splash/android/build/outputs/logs/manifest-merger-debug-report.txt
++++ b/node_modules/react-native-animated-splash/android/build/outputs/logs/manifest-merger-debug-report.txt
+@@ -1,25 +1,25 @@
+ -- Merging decision tree log ---
+ manifest
+-ADDED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml:2:1-5:12
+-INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml:2:1-5:12
+-INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml:2:1-5:12
++ADDED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml:2:1-5:12
++INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml:2:1-5:12
++INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml:2:1-5:12
+ 	package
+-		ADDED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml:3:11-48
+-		INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-		INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
++		ADDED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml:3:11-48
++		INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++		INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
+ 	xmlns:android
+-		ADDED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml:2:11-69
++		ADDED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml:2:11-69
+ uses-sdk
+-INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+-INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
++INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml reason: use-sdk injection requested
++INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
+ 	android:targetSdkVersion
+-		INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-		ADDED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-		INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
++		INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++		ADDED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++		INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
+ 	android:minSdkVersion
+-		INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-		ADDED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
+-		INJECTED from /Users/smithcharles/Desktop/adil/projects/Geoff/node_modules/react-native-animated-splash/android/src/main/AndroidManifest.xml
++		INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++		ADDED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
++		INJECTED from D:\WeatherApplication\node_modules\react-native-animated-splash\android\src\main\AndroidManifest.xml
+diff --git a/node_modules/react-native-animated-splash/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin b/node_modules/react-native-animated-splash/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin
+index 046ac1a..2b0ec16 100644
+Binary files a/node_modules/react-native-animated-splash/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin and b/node_modules/react-native-animated-splash/android/build/tmp/compileDebugJavaWithJavac/previous-compilation-data.bin differ
